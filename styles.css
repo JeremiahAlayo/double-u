@@ -106,14 +106,14 @@ button {
 }
 
 .brand-mark {
-  width: 46px;
-  height: 46px;
+  width: 58px;
+  height: 58px;
   flex: 0 0 auto;
   object-fit: contain;
-  border-radius: 12px;
-  background: var(--white);
-  padding: 4px;
-  box-shadow: 0 8px 24px rgba(14, 27, 46, 0.1);
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
 }
 
 .desktop-nav {
@@ -925,11 +925,11 @@ details p {
 }
 
 .official-footer-brand img {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  object-fit: cover;
-  background: var(--white);
+  width: 54px;
+  height: 54px;
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
 }
 
 .official-footer-brand strong,
@@ -1066,10 +1066,10 @@ details p {
   }
 
   .brand-mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    padding: 3px;
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    padding: 0;
   }
 
   .brand strong {
