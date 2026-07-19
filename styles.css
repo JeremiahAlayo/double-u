@@ -898,6 +898,119 @@ details p {
   line-height: 1.35;
 }
 
+
+.official-footer {
+  padding: 64px 0;
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.official-footer-inner {
+  max-width: 1120px;
+}
+
+.official-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(160px, 0.7fr) minmax(180px, 0.8fr);
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.official-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.official-footer-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--white);
+}
+
+.official-footer-brand strong,
+.official-footer-brand small {
+  display: block;
+}
+
+.official-footer-brand strong {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.official-footer-brand small {
+  margin-top: 3px;
+  color: rgba(247, 201, 40, 0.72);
+  font-size: 0.75rem;
+}
+
+.official-footer-brand-block p {
+  max-width: 320px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.official-footer h4 {
+  margin: 0 0 16px;
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.official-footer ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.official-footer-social ul {
+  margin-bottom: 28px;
+}
+
+.official-footer a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.92rem;
+  transition: color 180ms ease;
+}
+
+.official-footer a:hover,
+.official-footer-email {
+  color: rgba(247, 201, 40, 0.86);
+}
+
+.official-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.official-footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.78rem;
+}
+
+.official-footer-bottom a {
+  color: rgba(255, 255, 255, 0.36);
+  font-size: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 @media (max-width: 980px) {
   .desktop-nav,
   .header-cta {
@@ -1064,6 +1177,26 @@ details p {
     width: 100%;
   }
 
+
+  .official-footer {
+    padding: 56px 0 92px;
+  }
+
+  .official-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-bottom: 36px;
+  }
+
+  .official-footer-brand-block p {
+    max-width: none;
+  }
+
+  .official-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
   .sticky-apply {
     display: inline-flex;
   }
