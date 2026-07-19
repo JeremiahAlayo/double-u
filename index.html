@@ -9,6 +9,8 @@
       content="A clean project hub for Double U initiatives, programs, and landing pages."
     />
     <meta name="theme-color" content="#0E1B2E" />
+    <link rel="icon" type="image/jpeg" href="assets/doubleyou-logo-official.jpg" />
+    <link rel="apple-touch-icon" href="assets/doubleyou-logo-official.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,18 +52,14 @@
         text-decoration: none;
       }
       .mark {
-        position: relative;
-        width: 46px;
-        height: 38px;
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border-radius: 12px;
+        background: #fff;
+        padding: 4px;
+        box-shadow: 0 8px 24px rgba(14, 27, 46, 0.08);
       }
-      .mark span {
-        position: absolute;
-        border: 6px solid transparent;
-        border-radius: 999px;
-      }
-      .mark span:nth-child(1) { inset: 2px 23px 2px 0; border-left-color: var(--green); }
-      .mark span:nth-child(2) { inset: 0 15px; border-top-color: #0047ff; border-bottom-color: #0047ff; }
-      .mark span:nth-child(3) { inset: 2px 0 2px 23px; border-right-color: var(--gold); }
       .brand strong,
       .brand small { display: block; }
       .brand strong { line-height: 1; }
@@ -155,7 +153,7 @@
   <body>
     <main>
       <a class="brand" href="./" aria-label="Double U project hub">
-        <span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <img class="mark" src="assets/doubleyou-logo-official.jpg" alt="" />
         <span>
           <strong>Double U</strong>
           <small>Projects and program pages</small>
