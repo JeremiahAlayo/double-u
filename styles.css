@@ -890,6 +890,13 @@ details p {
   color: rgba(255, 255, 255, 0.62);
   font-size: 0.92rem;
 }
+.footer-brand small {
+  max-width: 260px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.35;
+}
 
 @media (max-width: 980px) {
   .desktop-nav,
@@ -960,6 +967,13 @@ details p {
     max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .footer-brand small {
+    max-width: 260px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
   }
 
   .hero {
