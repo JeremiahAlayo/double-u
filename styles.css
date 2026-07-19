@@ -871,6 +871,16 @@ details p {
   display: none;
   padding: 15px 18px;
   box-shadow: 0 16px 36px rgba(14, 27, 46, 0.22);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.sticky-apply.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .site-footer {
@@ -947,18 +957,47 @@ details p {
   }
 
   .site-header {
-    padding: 14px;
+    padding: 12px 14px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 30px;
+  }
+
+  .brand-mark span {
+    border-width: 5px;
+  }
+
+  .brand-mark span:nth-child(1) {
+    inset: 2px 18px 2px 0;
+  }
+
+  .brand-mark span:nth-child(2) {
+    inset: 0 12px;
+  }
+
+  .brand-mark span:nth-child(3) {
+    inset: 2px 0 2px 18px;
+  }
+
+  .brand strong {
+    font-size: 0.92rem;
   }
 
   .brand small {
-    max-width: 170px;
+    max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .hero {
-    min-height: 700px;
-    padding: 118px 0 70px;
+    min-height: 100svh;
+    padding: 110px 0 94px;
   }
 
   .hero-media img {
@@ -972,21 +1011,45 @@ details p {
       linear-gradient(0deg, rgba(14, 27, 46, 0.88) 0%, rgba(14, 27, 46, 0) 46%);
   }
 
+  .eyebrow,
+  .section-kicker {
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+
   h1 {
-    font-size: clamp(3.8rem, 18vw, 5.6rem);
+    max-width: 100%;
+    font-size: clamp(3rem, 13.5vw, 4.25rem);
+    line-height: 0.96;
+    overflow-wrap: normal;
   }
 
   h2 {
     font-size: clamp(2rem, 11vw, 3rem);
   }
 
+  .hero-copy {
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 360px;
+    gap: 10px;
+  }
+
   .button {
     width: 100%;
+    min-height: 48px;
+    padding: 13px 18px;
   }
 
   .hero-proof {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 24px;
   }
 
   .fact-grid,

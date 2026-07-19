@@ -5,14 +5,26 @@ const menuButton = document.querySelector("[data-menu-button]");
 const mobileNav = document.querySelector("[data-mobile-nav]");
 const applyButton = document.querySelector("[data-apply-button]");
 const applyNote = document.querySelector("[data-apply-note]");
+const stickyApply = document.querySelector(".sticky-apply");
 
 const setHeaderState = () => {
   if (!header) return;
   header.classList.toggle("is-scrolled", window.scrollY > 24);
 };
 
+const setStickyApplyState = () => {
+  if (!stickyApply) return;
+  const hero = document.querySelector(".hero");
+  const triggerPoint = hero ? hero.offsetHeight * 0.72 : 520;
+  stickyApply.classList.toggle("is-visible", window.scrollY > triggerPoint);
+};
+
 setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
+setStickyApplyState();
+window.addEventListener("scroll", () => {
+  setHeaderState();
+  setStickyApplyState();
+}, { passive: true });
 
 menuButton?.addEventListener("click", () => {
   const isOpen = mobileNav?.classList.toggle("is-open");
