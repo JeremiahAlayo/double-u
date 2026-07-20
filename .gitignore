@@ -7,3 +7,4 @@ dist/
 out/
 .next/
 africa-internship-program-2026/submissions/*.csv
+*.zip
