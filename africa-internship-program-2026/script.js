@@ -50,7 +50,7 @@ applyButton?.addEventListener("click", () => {
 
   if (applyNote) {
     applyNote.textContent =
-      "Application form link has not been added yet. Replace APPLICATION_FORM_URL in script.js before launch.";
+      "The application form is currently unavailable. Please try again later.";
     applyNote.classList.add("is-warning");
   }
 });
