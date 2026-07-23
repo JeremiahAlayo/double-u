@@ -1,4 +1,4 @@
-const APPLICATION_FORM_URL = "register.html";
+const APPLICATION_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4qjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform";
 
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector("[data-menu-button]");
@@ -44,7 +44,7 @@ mobileNav?.querySelectorAll("a").forEach((link) => {
 
 applyButton?.addEventListener("click", () => {
   if (APPLICATION_FORM_URL) {
-    window.location.href = APPLICATION_FORM_URL;
+    window.open(APPLICATION_FORM_URL, "_blank", "noopener,noreferrer");
     return;
   }
 

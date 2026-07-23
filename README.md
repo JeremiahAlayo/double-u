@@ -2,7 +2,7 @@
 
 A clean GitHub Pages project hub for Double U initiatives, programs, and landing pages.
 
-The first project under this hub is the Doubleyou Africa Internship Program 2026 landing page.
+The first project under this hub is the AFRICAN STUDENT IMPACT PROGRAM page.
 
 ## Current pages
 
@@ -10,9 +10,9 @@ The first project under this hub is the Doubleyou Africa Internship Program 2026
 /
   Double U project hub
 /africa-internship-program-2026/
-  Doubleyou Africa Internship Program 2026 landing page
+  AFRICAN STUDENT IMPACT PROGRAM landing page
 /africa-internship-program-2026/register.html
-  Applicant registration form
+  Embedded Google Form application page
 ```
 
 ## GitHub Pages link structure
@@ -29,35 +29,47 @@ The main project hub is:
 https://JeremiahAlayo.github.io/double-u/
 ```
 
-The internship landing page is:
+The program landing page is:
 
 ```text
 https://JeremiahAlayo.github.io/double-u/africa-internship-program-2026/
 ```
 
-The registration form preview is:
+The embedded application page preview is:
 
 ```text
 https://JeremiahAlayo.github.io/double-u/africa-internship-program-2026/register.html
 ```
 
-GitHub Pages is only a static preview. The PHP form submission works only after the folder is uploaded to a PHP-enabled host such as cPanel.
+## Official application form
+
+All Apply and Apply Now buttons use the public Google Form `viewform` link:
+
+```text
+https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4qjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform
+```
+
+The embedded form page uses this public embed URL:
+
+```text
+https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4qjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform?embedded=true
+```
+
+Do not use or publish any Google Form edit link on the public website.
 
 ## What is included
 
 - Double U root project hub
-- Doubleyou Africa Internship Program 2026 landing page
-- Applicant registration form
-- PHP submission handler
-- Protected submissions folder
+- AFRICAN STUDENT IMPACT PROGRAM landing page
+- Embedded Google Form application page
 - Program quick facts
-- Four internship track sections
+- Four program track sections
 - Eligibility section
 - Benefits section
 - Timeline section
 - Trust badges
 - FAQ section
-- Apply Now calls to action linked to the form
+- Apply Now calls to action linked to the public Google Form
 - SEO metadata and structured data
 - Optimized flyer image for web loading
 
@@ -74,105 +86,49 @@ assets/
 africa-internship-program-2026/
   index.html
   register.html
-  submit.php
   styles.css
   script.js
   assets/
     doubleyou-internship-flyer-optimized.jpg
     doubleyou-logo-official.jpg
-  submissions/
-    .htaccess
-    index.html
 ```
 
 ## How responses are collected
 
-When the project is uploaded to cPanel, applicants submit the form at:
+Responses are collected directly inside Google Forms. Open the Google Form owner account to view responses, export to Google Sheets, or download CSV.
 
-```text
-https://doubleyou.com.ng/africa-internship-program-2026/register.html
-```
+The website does not collect responses locally and does not use PHP, CSV storage, or a database.
 
-The form posts to:
+## Hosting requirements
 
-```text
-https://doubleyou.com.ng/africa-internship-program-2026/submit.php
-```
-
-`submit.php` validates the form and saves every application into:
-
-```text
-public_html/africa-internship-program-2026/submissions/applications.csv
-```
-
-The CSV contains:
-
-- Submission time
-- Full name
-- Email address
-- Phone / WhatsApp number
-- Country
-- University / institution
-- Course / department
-- Level / year of study
-- Preferred track
-- Reason for applying
-- Relevant skills
-- Portfolio link
-- Availability confirmation
-- IP address
-
-The `submissions` folder includes `.htaccess` rules to block public browser access. Download the CSV from cPanel File Manager instead of linking it publicly.
-
-## Email notifications
-
-The form sends a basic notification email to:
-
-```text
-hello@doubleyou.com.ng
-```
-
-To change the notification recipient, edit this line in `africa-internship-program-2026/submit.php`:
-
-```php
-const CONTACT_EMAIL = 'hello@doubleyou.com.ng';
-```
-
-The CSV file is the main reliable record. Email delivery depends on the cPanel server mail configuration, SPF, DKIM, and whether PHP `mail()` is enabled.
-
-## cPanel requirements
-
-No Node.js, npm, database, or build tool is required on the server.
+No Node.js, npm, database, or PHP form handler is required.
 
 Required:
 
-- Apache or LiteSpeed hosting
-- PHP 8 or later
-- PHP file write permission inside `submissions/`
-- PHP `mail()` enabled for notifications
-- cPanel File Manager access for downloading `applications.csv`
+- Static hosting or cPanel File Manager upload
+- The `africa-internship-program-2026/` folder uploaded as-is
+- Public access to the Google Form `viewform` link
 
 Recommended after upload:
 
 1. Back up any existing `public_html/africa-internship-program-2026/` folder.
 2. Upload or extract the new `africa-internship-program-2026/` folder into `public_html/`.
 3. Open the landing page.
-4. Click every Apply button and confirm it opens `register.html`.
-5. Submit one test application.
-6. Confirm the success page appears.
-7. Confirm `submissions/applications.csv` was created in cPanel.
-8. Confirm a notification email arrives at the configured email address.
-9. Delete the test application row from the CSV if needed.
+4. Click every Apply button and confirm it opens the public Google Form.
+5. Open `register.html` and confirm the embedded Google Form loads.
+6. Test desktop responsiveness.
+7. Test mobile responsiveness.
+8. Confirm the live page does not contain a Google Form edit link.
 
 ## Local preview
 
 Open `index.html` directly in a browser for the hub.
 
-Open `africa-internship-program-2026/index.html` directly in a browser for the internship page.
+Open `africa-internship-program-2026/index.html` directly in a browser for the program page.
 
-Open `africa-internship-program-2026/register.html` directly in a browser for the form layout.
+Open `africa-internship-program-2026/register.html` directly in a browser for the embedded Google Form page.
 
-Local form submission requires PHP. This machine did not have PHP installed during testing, so final form submission should be tested on cPanel.
+No build step is required.
 
 ## GitHub Pages setup
 
