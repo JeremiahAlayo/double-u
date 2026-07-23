@@ -46,13 +46,13 @@ https://JeremiahAlayo.github.io/double-u/africa-internship-program-2026/register
 All Apply and Apply Now buttons use the public Google Form `viewform` link:
 
 ```text
-https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4qjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform
+https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4gjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform
 ```
 
 The embedded form page uses this public embed URL:
 
 ```text
-https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4qjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform?embedded=true
+https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4gjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform?embedded=true
 ```
 
 Do not use or publish any Google Form edit link on the public website.

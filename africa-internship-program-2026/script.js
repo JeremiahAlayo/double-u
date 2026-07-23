@@ -1,4 +1,4 @@
-const APPLICATION_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4qjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform";
+const APPLICATION_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSexspXmDF1F4tevz4gjRqpaMB-zgbJU-cqYG6qmxqa-KMVeWA/viewform";
 
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector("[data-menu-button]");
